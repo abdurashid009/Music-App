@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.player-container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.custom-file {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.custom-file input {
+  display: none;
+}
+
+.custom-file span {
+  color: white;
+  font-weight: bold;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+#playlist li {
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+#playlist li.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+audio {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.controls button {
+  margin: 6px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #666;
+}
+
+.volume {
+  margin-top: 15px;
+}
+
+input[type="range"] {
+  width: 100px;
+}
